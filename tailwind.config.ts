@@ -55,7 +55,29 @@ export default {
   			lg: 'var(--radius)',
   			md: 'calc(var(--radius) - 2px)',
   			sm: 'calc(var(--radius) - 4px)'
-  		}
+  		},
+  		animation: {
+  			'shiny-text': 'shiny-text 8s infinite',
+			'shine': 'shine 6s ease-in-out infinite',
+  		},
+  		keyframes: {
+  			'shiny-text': {
+  				'0%, 90%, 100%': {
+  					'background-position': 'calc(-100% - var(--shiny-width)) 0'
+  				},
+  				'30%, 60%': {
+  					'background-position': 'calc(100% + var(--shiny-width)) 0'
+  				}
+  			},
+			'shine': {
+				from: {
+					backgroundPosition: '200% 0'
+				},
+				to: {
+					backgroundPosition: '-200% 0'
+				}
+			},
+		}
   	}
   },
   plugins: [require("tailwindcss-animate")],
