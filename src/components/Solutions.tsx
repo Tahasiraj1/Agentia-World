@@ -36,7 +36,7 @@ const Solutions = () => {
         <div className='grid grid-cols-1 md:grid-cols-3 gap-4'>
             {SolutionsItem.map((item, index) => (
                 <HoverEffect key={index}>
-                    <div className='flex flex-col relative group items-center justify-center w-full h-auto rounded-lg bg-neutral-950 border border-neutral-700 px-4 py-6 space-y-4'>
+                    <div className='flex flex-col relative group items-center justify-center w-full h-auto rounded-lg bg-neutral-950 px-4 py-6 space-y-4'>
                         <div className='w-16 h-16 bg-gradient-to-br from-purple-500 via-blue-500 to-purple-500 rounded-md flex items-center justify-center'>
                             {item.icon}
                         </div>
