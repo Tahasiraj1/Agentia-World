@@ -10,18 +10,7 @@ import { Button } from "./ui/button";
 
 const Hero = () => {
   return (
-    <BackgroundBeamsWithCollision className="md:px-10 px-4 max-h-[100vh] lg:max-h-[90vh] relative overflow-hidden">
-        <div 
-        className="absolute -bottom-2 left-0 w-full h-28"
-        style={{
-            background: "linear-gradient(to right, blue, fuchsia, blue)",
-            maskImage: "linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0))",
-            height: "100px",
-            opacity: "0.3",
-            backgroundSize: "400% 100%",
-            animation: "shine 40s ease-in-out infinite",
-        }}
-        ></div>
+    <BackgroundBeamsWithCollision className="md:px-10 px-4 max-h-[100vh] lg:max-h-[90vh] bg-gradient-to-t from-fuchsia-500/15 via-transparent to-transparent overflow-hidden">
         <div className="flex flex-col items-center justify-center space-y-5 md:space-y-10">
             <div className="flex items-center justify-center rounded-full py-2 px-4 bg-neutral-900">
                 <AnimatedShinyText className="font-bold flex items-center justify-center gap-2">
